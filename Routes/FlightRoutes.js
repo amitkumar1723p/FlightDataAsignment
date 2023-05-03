@@ -11,16 +11,14 @@ const router = express.Router();
 //  Flight Route
 
 //  Create Flight Data
-router.post("/create", CreateFlightDocument);
-
-//  get Flight Name and Price
-router.get("/name/price", getAllFlightNameAndPrice);
+router.post("/", CreateFlightDocument);
 
 //  get All Flight Data
 router.get("/all", getAllFlightData);
 
 // get Single Flight Data  By Flight Document Id
+router.get("/:id", getSinleFlightData);
 
-router.get("/singleFlightData", getSinleFlightData);
-
+//  get Flight Name and Price
+router.get("/", getAllFlightNameAndPrice);
 export default router;

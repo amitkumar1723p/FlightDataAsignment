@@ -14,6 +14,12 @@ export const CreateFlightDocument = async (req, res) => {
       Price,
       Date,
     };
+    // Check  AirLine(flight)  is allready Exit
+    let findAirline = await FlightModel.findOne({ Airline });
+    if (findAirline) {
+      let message = "This AirLine(flight) Name is All redy Exist";
+      return SendError(res, 400, false, message, null);
+    }
 
     //  Create Database Document
     const FlightDatabaseDocument = new FlightModel(FlightData);
@@ -87,14 +93,8 @@ export const getAllFlightData = async (req, res) => {
 // Get Single Flight Data By Flight Document Id
 
 export const getSinleFlightData = async (req, res) => {
-  const { id } = req.query;
-  // send Error  if  Flight Document Id is not Available in Query
+  const { id } = req.params;
 
-  if (!id) {
-    let message =
-      "Please Enter a Flight Document Id in querry form example :-http://localhost:5000/flightData/singleFlightData?id=64522e6c2dbd373b678da98e";
-    return SendError(res, 404, false, message, null);
-  }
   try {
     //  find Flight data
     let findFlightData = await FlightModel.findById(id);
