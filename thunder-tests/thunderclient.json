@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-03T09:24:55.997Z",
-    "modified": "2023-05-03T13:26:40.745Z",
+    "modified": "2023-05-03T15:12:10.503Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": " {\n   \"Source\":\"Delhi\",\n      \"Destination\":\"Jaipur\",\n      \"Airline\":\"American Airlines\",\n      \"Price\":5000,\n       \"Date\":\"15 April 2023\"\n }",
+      "raw": " {\n   \"Source\":\"Delhi\",\n      \"Destination\":\"Jaipur\",\n      \"Airline\":\"Air Canada\",\n      \"Price\":500,\n       \"Date\":\"15 April 2023\"\n }",
       "form": []
     },
     "tests": []
@@ -51,11 +51,11 @@
     "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
     "containerId": "",
     "name": "Get Single Flight Data",
-    "url": "http://localhost:5000/flightData/64522e6c2dbd373b678da98e",
+    "url": "http://localhost:5000/flightData/645278c49e708aba7cb738c5",
     "method": "GET",
     "sortNum": 50000,
     "created": "2023-05-03T11:29:13.013Z",
-    "modified": "2023-05-03T13:36:32.124Z",
+    "modified": "2023-05-03T15:14:22.414Z",
     "headers": [],
     "params": [],
     "tests": []

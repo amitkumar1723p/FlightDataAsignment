@@ -12,7 +12,7 @@ export const CreateFlightDocument = async (req, res) => {
       Destination,
       Airline,
       Price,
-      Date,
+      Date, 
     };
     // Check  AirLine(flight)  is allready Exit
     let findAirline = await FlightModel.findOne({ Airline });
@@ -23,7 +23,7 @@ export const CreateFlightDocument = async (req, res) => {
 
     //  Create Database Document
     const FlightDatabaseDocument = new FlightModel(FlightData);
-    console.log(FlightDatabaseDocument);
+
     // Save Document in Database
     const data = await FlightDatabaseDocument.save();
 

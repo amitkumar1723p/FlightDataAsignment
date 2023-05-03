@@ -11,7 +11,6 @@ let envfileabsPath = join(process.cwd(), "Config", ".env");
 
 // Error Handler
 process.on("uncaughtException", (err) => {
-  console.log(err);
   process.exit(1);
 });
 
@@ -31,13 +30,11 @@ app.use("/flightData", FlightRoutes);
 
 //get Port
 const port = process.env.PORT;
-const server = app.listen(port, () => {
-  console.log(`server listen on http://localhost:${port}/`);
-});
+const server = app.listen(port);
 
 // Error Handler
 process.on("unhandledRejection", (err) => {
-  console.log(err);
+ 
   server.close(() => {
     process.exit(1);
   });
