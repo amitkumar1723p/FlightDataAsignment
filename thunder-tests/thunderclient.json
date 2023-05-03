@@ -1,0 +1,69 @@
+[
+  {
+    "_id": "2b9e7dd9-f973-454a-933d-163651986fa9",
+    "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
+    "containerId": "",
+    "name": "Create Flight Data",
+    "url": "http://localhost:5000/flightData/create",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-05-03T09:24:55.997Z",
+    "modified": "2023-05-03T10:01:37.624Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n   \"Source\":\"Delhi\",\n      \"Destination\":\"Jaipur\",\n      \"Airline\":\"American Airlines\",\n      \"Price\":5000,\n       \"Date\":\"15 April 2023\"\n }",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d3aa3172-80cc-4a01-b182-3e893076fe3f",
+    "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
+    "containerId": "",
+    "name": "get  FlightData Name And Price",
+    "url": "http://localhost:5000/flightData/name/price",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-05-03T10:10:08.613Z",
+    "modified": "2023-05-03T10:10:33.080Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "75e58eb8-f626-40a5-8ac6-62d0b748e598",
+    "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
+    "containerId": "",
+    "name": "Get All Flight Data",
+    "url": "http://localhost:5000/flightData/all",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-05-03T10:58:23.193Z",
+    "modified": "2023-05-03T12:10:01.947Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b6e56a90-a4c4-422c-90d2-fd87e06ea8b6",
+    "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
+    "containerId": "",
+    "name": "Get Single Flight Data",
+    "url": "http://localhost:5000/flightData/singleFlightData?id=64522e6c2dbd373b678da98e",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-05-03T11:29:13.013Z",
+    "modified": "2023-05-03T11:49:02.742Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "64522e6c2dbd373b678da98e",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  }
+]
