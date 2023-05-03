@@ -37,11 +37,11 @@
     "colId": "4ad04c44-64ef-4862-adc9-d1b503dc05ee",
     "containerId": "",
     "name": "Get All Flight Data",
-    "url": "http://localhost:5000/flightData/all",
+    "url": "https://flightdataasignment.onrender.com/flightData/all",
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-05-03T10:58:23.193Z",
-    "modified": "2023-05-03T13:34:26.294Z",
+    "modified": "2023-05-03T15:41:29.846Z",
     "headers": [],
     "params": [],
     "tests": []

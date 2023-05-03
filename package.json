@@ -5,7 +5,7 @@
     "mongoose": "^7.1.0",
     "validator": "^13.9.0"
   },
-  "name": "nodejs-quiz-task",
+  "name": "Flight Data  Assingment",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
