@@ -1,23 +1,27 @@
 {
+  "name": "node-js-intern-ship-assingnment",
+  "version": "1.0.0",
+  "description": "Flight API (Assignment)\r Hi! My name is Amitkumar, I have created Flight API.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitkumar1723p/bug-free-doodle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitkumar1723p/bug-free-doodle/issues"
+  },
+  "homepage": "https://github.com/amitkumar1723p/bug-free-doodle#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.1.0",
-    "validator": "^13.9.0"
-  },
-  "name": "Flight Data  Assingment",
-  "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "scripts": {
-    "dev": "nodemon app.js -e js",
-    "start": "node app.js"
-  },
-  "keywords": [],
-  "author": "Amit kumar",
-  "license": "ISC",
-  "description": ""
+    "mongoose": "^7.1.0"
+  }
 }

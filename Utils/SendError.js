@@ -15,5 +15,5 @@ export const SendError = (res, status, success, message, error) => {
     }
   } else {
     return res.status(status).json({ message, success });
-  }
+  } 
 };
